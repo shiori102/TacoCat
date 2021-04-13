@@ -11,37 +11,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/prismOkaidia.css">
+    <link rel="stylesheet" href="/css/TacoCat.css">
 </head>
 
 <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">TacoCat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">The App <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="code.html">Code</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://shioriportfolio.netlify.app/about.html">About</a>
-                </li>
-            </ul>
+           <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="app.html">The App</a>
+               </li>
+               <li class="nav-item active">
+                   <a class="nav-link" href="code.html">Code</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="https://github.com/shiori102/TacoCat">Get the Code</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="https://shioriportfolio.netlify.app/about.html">About Me</a>
+               </li>
+           </ul>
         </div>
     </nav>
 
 
-    <div class="container mt-5">
-        <div class="row pt-5">
-            <div class="col-10 offset-1 line-numbers">
-                <pre><code class="language-javascript">function reverseString() {
+            <div class="container mt-5">
+                <div class="row pt-5 ">
+                    <div class="col-10 offset-1 line-numbers border border-dark rounded">
+                        <h2>Here's the Code:</h2>
+                        <pre><code class="language-javascript">function reverseString() {
     let userWord = document.getElementById("tacoCat").value;
     let cleanedWord = userWord.replaceAll(/[^A-Za-z0-9]/g, "").toLowerCase();
 
@@ -54,21 +62,22 @@
     let output = document.getElementById("tacoOutput");
     output.innerText = reverseWord;
 
+    
+let resultOutput = document.getElementById("palindromeOutput")
+if (reverseWord == cleanedWord) {
+    resultOutput.innerText = "It's a palindrome."
 
+} else {
+    resultOutput.innerText = "It's not a palindrome."
 }
 
-var isPalindrome = function (reverseWord) {
-    if (reverseWord == cleanedWord) {
-        alert(reverseWord + "is a isPalindrome.");
+}
+</code></pre>
 
-    } else {
-        alert(reverseWord + "is not a palindrome.");
-    }
-}</code></pre>
-
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

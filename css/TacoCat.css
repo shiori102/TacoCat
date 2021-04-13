@@ -1,11 +1,42 @@
 html {
     position: relative;
     min-height: 100%;
+
 }
 
 body {
-    /* Margin bottom by footer height */
     margin-bottom: 60px;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 46%, rgba(255, 120, 120, 1) 100%);
+}
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 80px;
+}
+
+h2 {
+     font-family: 'Fredoka One',
+     cursive;
+     font-size: 40px;
+}
+
+.grid2 {
+    font-size: 20px;
+    font-family: 'Inconsolata',
+    monospace;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar {
+    min-height: 100px;
+}
+
+.nav-item {
+    font-size: 25px;
 }
 
 .footer {
@@ -20,9 +51,6 @@ body {
 }
 
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
 
 body>.container {
     padding: 60px 15px 0;

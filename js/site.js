@@ -11,14 +11,12 @@ function reverseString() {
     let output = document.getElementById("tacoOutput");
     output.innerText = reverseWord;
 
-
-}
-
-var isPalindrome = function (reverseWord) {
+    let resultOutput = document.getElementById("palindromeOutput")
     if (reverseWord == cleanedWord) {
-        alert(reverseWord + "is a isPalindrome.");
+        resultOutput.innerText = `${cleanedWord} is a palindrome.`
 
     } else {
-        alert(reverseWord + "is not a palindrome.");
+        resultOutput.innerText = `${cleanedWord} is not a palindrome.`
     }
+
 }
