@@ -97,7 +97,10 @@
     <script src="https://kit.fontawesome.com/4d4fb3e149.js" crossorigin="anonymous"></script>
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById("tacoBtn").addEventListener("click", reverseString);
+        var el = document.getElementById("tacoBtn");
+        if (el != null) {
+            el.addEventListener("click", reverseString, false);
+        }
     </script>
 
 </body>
